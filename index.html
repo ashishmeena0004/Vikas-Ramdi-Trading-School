@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>School</title>
+
+<!-- Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1625257312374151');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1625257312374151&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<!-- AUTO TELEGRAM REDIRECT -->
+<script>
+setTimeout(function(){
+window.location.href="https://telegram.me/+I3PX_I3mCEpjYjE1";
+},11000);
+</script>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Inter',sans-serif;
+min-height:100vh;
+
+background:url('https://i.ibb.co/7x4vqZqd/image.jpg')
+center/cover no-repeat;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+position:relative;
+overflow:hidden;
+}
+
+body::before{
+content:"";
+position:absolute;
+inset:0;
+
+background:
+radial-gradient(
+circle at top,
+rgba(0,0,0,0.6),
+rgba(0,0,0,0.95)
+);
+
+z-index:0;
+}
+
+
+/* CARD */
+
+.card{
+position:relative;
+z-index:2;
+
+backdrop-filter:blur(18px);
+-webkit-backdrop-filter:blur(18px);
+
+background:rgba(255,255,255,0.06);
+
+border:1px solid rgba(255,215,0,0.3);
+
+border-radius:26px;
+
+padding:45px 30px;
+
+max-width:420px;
+width:95%;
+
+text-align:center;
+color:#fff;
+
+box-shadow:0 30px 80px rgba(0,0,0,0.9);
+
+animation:fadeUp 1s ease;
+}
+
+
+/* LOGO */
+
+.logo{
+width:125px;
+height:125px;
+
+object-fit:cover;
+
+border-radius:50%;
+
+border:3px solid #FFD700;
+
+margin-bottom:20px;
+
+box-shadow:0 0 35px rgba(255,215,0,0.7);
+
+animation:float 3s ease-in-out infinite;
+}
+
+
+/* TITLE */
+
+h1{
+font-family:'Inter',sans-serif;
+
+font-size:26px;
+
+font-weight:900;
+
+color:#FFD700;
+
+margin-bottom:8px;
+
+letter-spacing:-0.5px;
+
+line-height:1.2;
+}
+
+
+/* SUB TITLE */
+
+h2{
+font-family:'Inter',sans-serif;
+
+font-size:18px;
+
+font-weight:800;
+
+color:#fff;
+
+margin-bottom:15px;
+
+letter-spacing:-0.2px;
+
+line-height:1.35;
+}
+
+
+/* SUB TEXT */
+
+.sub{
+font-family:'Inter',sans-serif;
+
+font-size:13px;
+
+font-weight:700;
+
+letter-spacing:0.3px;
+
+color:#f2f2f2;
+
+margin-bottom:28px;
+}
+
+
+/* BUTTON */
+
+.btn{
+display:inline-block;
+
+padding:17px 45px;
+
+border-radius:18px;
+
+background:
+linear-gradient(
+135deg,
+#00c6ff,
+#005bbb
+);
+
+color:#fff;
+
+font-family:'Inter',sans-serif;
+
+font-weight:800;
+
+text-decoration:none;
+
+font-size:14px;
+
+letter-spacing:-0.1px;
+
+transition:0.4s ease;
+
+box-shadow:
+0 15px 40px rgba(0,176,255,0.6);
+
+position:relative;
+
+overflow:hidden;
+}
+
+.btn::before{
+content:"";
+
+position:absolute;
+
+top:0;
+left:-120%;
+
+width:120%;
+height:100%;
+
+background:
+linear-gradient(
+120deg,
+transparent,
+rgba(255,255,255,0.4),
+transparent
+);
+
+transition:0.6s;
+}
+
+.btn:hover::before{
+left:120%;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+
+box-shadow:
+0 25px 60px rgba(0,176,255,1);
+}
+
+
+/* POINTS */
+
+.points{
+list-style:none;
+
+margin:20px 0;
+
+font-family:'Inter',sans-serif;
+
+font-size:13px;
+
+font-weight:600;
+
+color:#f5f5f5;
+}
+
+.points li{
+margin:9px 0;
+
+line-height:1.5;
+}
+
+
+/* ADS TAG */
+
+.ads-tag{
+margin-top:18px;
+
+font-size:11px;
+
+font-weight:600;
+
+padding:8px 14px;
+
+border-radius:8px;
+
+background:rgba(255,255,255,0.08);
+
+border:1px solid rgba(255,255,255,0.2);
+
+font-family:'Inter',sans-serif;
+}
+
+.ads-tag a{
+color:#00c6ff;
+
+font-weight:800;
+
+text-decoration:none;
+}
+
+
+/* RISK */
+
+.risk{
+font-family:'Inter',sans-serif;
+
+font-size:11px;
+
+font-weight:500;
+
+color:rgba(255,255,255,0.72);
+
+margin-top:10px;
+
+line-height:1.5;
+}
+
+
+/* ANIMATION */
+
+@keyframes float{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-8px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(40px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:480px){
+
+.card{
+padding:38px 22px;
+}
+
+.logo{
+width:110px;
+height:110px;
+}
+
+h1{
+font-size:22px;
+font-weight:900;
+}
+
+h2{
+font-size:15px;
+font-weight:800;
+}
+
+.sub{
+font-size:12px;
+font-weight:700;
+}
+
+.btn{
+width:100%;
+padding:15px 20px;
+font-size:13px;
+font-weight:800;
+}
+
+.points{
+font-size:12px;
+font-weight:600;
+}
+
+.risk{
+font-size:10px;
+}
+
+.ads-tag{
+font-size:10px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<img src="https://i.postimg.cc/8CPwSLwR/Trading-School-102.jpg" class="logo">
+
+<h1>Trading School</h1>
+<h2>🔥 DAILY MARKET UPDATES 🔥</h2>
+
+<p class="sub">
+NIFTY • BANKNIFTY • STOCK OPTIONS
+</p>
+
+<a href="https://telegram.me/+I3PX_I3mCEpjYjE1" class="btn" onclick="fbq('track','Lead')">
+🚀 Join Free Telegram Channel
+</a>
+
+<ul class="points">
+<li>✔ Daily Market Upadtes Free</li>
+<li>✔ F&O Views for Study Purpose Only</li>
+</ul>
+
+<p class="risk">
+⚠️ Market Investments are subject to Market risks
+</p>
+
+<div class="ads-tag">
+🔥 Powered by 
+<a href="https://telegram.me/+7QAPZMSQ-Y00N2Vl" target="_blank">Adzonn Ads</a>
+</div>
+
+</div>
+
+</body>
+</html>
